@@ -1,0 +1,12 @@
+{
+    "python.linting.ignorePatterns": [
+        ".vscode/*.py",
+        "**/site-packages/**/*.py",
+        "**/node_modules/**"
+    ],
+    "files.exclude": {
+        "**/.vscode": true,
+        "**/e2e": true,
+        "**/node_modules": true
+    }
+}
