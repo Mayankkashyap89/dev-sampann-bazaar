@@ -3,14 +3,16 @@ html, body {
     margin: 0 auto;
     padding: 0;
     width: 100%;
-    height: 100%;
-    font-size: 14px;
+    min-height: 100vh;
+    font-size: 18px !important;
+    background-image: linear-gradient(#232f3e, #27633f);
 }
 
 body {
-    font-family: Poppins,sans-serif;
+    font-family: 'PT Sans', sans-serif !important;
     position: relative;
     overflow: auto;
+    color: #585858 !important;
 }
 
 m-b-10,
@@ -19,9 +21,27 @@ header{
 }
 
 #content{
-    min-height: 90vh;
+    padding-top: 104px;
+    color: #969595 !important;
 }
 
 footer{
-    
+    font-size: 14px;
+}
+
+i {
+    margin-right: 5px;
+}
+
+.p-l{
+    padding-left: 15px !important;
+}
+
+.p-r{
+    padding-right: 15px !important;
+}
+
+.p-lr{
+    @extend .p-l;
+    @extend .p-r;
 }

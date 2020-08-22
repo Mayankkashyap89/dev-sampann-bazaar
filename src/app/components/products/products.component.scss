@@ -1,0 +1,13 @@
+.products{
+    .top-img{
+        background-color: #ffffff;
+        img {
+            width: 100%;
+            opacity: 0.6;
+            background-attachment: fixed;
+            background-size: cover;
+            -webkit-font-smoothing: antialiased;
+            -webkit-overflow-scrolling: touch;
+        }
+    }
+}

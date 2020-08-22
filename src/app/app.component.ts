@@ -11,7 +11,7 @@ export class AppComponent {
     
   onWindowScroll(event) {
     console.log(event, window.pageYOffset);
-    if (window.pageYOffset > 5) this.className = "scrolled";
-    else this.className = "";
+    // if (window.pageYOffset > 5) this.className = "scrolled";
+    // else this.className = "";
   }
 }

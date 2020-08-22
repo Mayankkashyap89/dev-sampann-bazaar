@@ -1,1 +1,131 @@
 @import "./app/variables.scss";
+
+
+@media screen and (min-width: 300px) {
+    .navbar-brand{
+        max-width: 70% !important;
+        margin: 0;
+    }
+}
+
+
+@media screen and (min-width: 500px) {
+    .navbar-brand{
+        max-width: 50% !important;
+        margin: 0;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 767px) {
+    .navbar-brand{
+        max-width: 40% !important;
+        margin: 0;
+    }
+
+    .container{
+        max-width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container-fluid {
+        padding: 0px !important;
+    }
+    .navbar{
+        height: 120px !important;
+        .navbar-nav .nav-item .nav-link{
+            font-size: 13px !important;
+        }
+        #navbarNav1 .nav-link {
+            padding: 0.2rem 6px 0.2rem 6px !important;
+        }
+    }
+
+    .location {
+        height: 300px !important;
+    }
+
+    .row{
+        margin: 0 !important;
+    }
+
+    .watermark-text h1 img{
+        width: 50% !important;
+        transform: translate(50%, 33%) !important;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    .col-sm-6 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+
+    .location {
+        width: 100%;
+    }
+
+    .navbar{
+        align-items: flex-start !important;
+        // padding-right: 0 !important;
+        .navbar-nav .nav-item .nav-link{
+            margin: 0 !important;
+            padding-left: 0px !important;
+            font-size: 1rem;
+        }
+        #navbarNav1{  
+            width: 100%;
+            justify-content: normal !important;
+            margin-left: 0 auto;
+            .nav-link{
+                padding: 0.2rem 6px 0.2rem 0px;
+            }
+        }
+        #navbarNav{
+            display: inline-block;
+            .dropdown{
+                position: absolute;
+                right: 0;
+                /* text-decoration: none; */
+                top: 10px;
+                list-style: none;
+                .nav-link{
+                    padding: 1rem !important;
+                    color: rgb(228 228 227 / 90%);
+                }
+            }
+        }
+    }
+
+    .hidden-sm{
+        visibility: hidden;
+        display: none !important;
+        opacity: 0;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .navbar-brand{
+        max-width: 30% !important;
+        margin: 0;
+    }
+    .hidden-md{
+        visibility: hidden;
+        display: none !important;
+        opacity: 0;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-nav .nav-item .nav-link{
+        font-size: 13px;
+    }
+
+    .navbar-brand{
+        max-width: 44% !important;
+        margin: 0;
+        padding: 0 !important;
+    }
+}
