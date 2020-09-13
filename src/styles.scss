@@ -115,13 +115,13 @@ i {
 ::-webkit-scrollbar-track {
     background: transparent;
     box-shadow: inset 0 0 5px grey; 
-    border-radius: 10px;
+    // border-radius: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: rgb(199 199 196); 
-    border-radius: 10px;
+    // border-radius: 10px;
 }
 
 /* Handle on hover */
