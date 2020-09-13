@@ -1,10 +1,32 @@
 <div id="main"  class="wrapper" (window:scroll)="onWindowScroll($event)">
   <!-- HEADER -->
   <header [className]="className"></header>
+  <!-- HEADER -->
   <!-- CONTENT -->
-  <div id="content-container">
-    <content></content>
-  </div>
+  <content></content>
+  <!-- CONTENT -->
   <!-- FOOTER -->
   <footer></footer>
+  <!-- FOOTER -->
+  <!-- SOCIAL LINKS -->
+  <div class="social-icons" *ngIf="route.url != '/contact'">
+    <ul class="list-unstyled text-center mb-0">
+      <li class="list-unstyled-item">
+        <a href="#">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+      <li class="list-unstyled-item">
+        <a href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+      <li class="list-unstyled-item">
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- SOCIAL LINKS -->
 </div>

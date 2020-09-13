@@ -12,6 +12,7 @@ import { OffersComponent } from './components/offers/offers.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProductsComponent } from './components/products/products.component';
 import { MemberComponent } from './components/member/member.component';
+import { ComingSoonComponent } from './components/shared/coming-soon/coming-soon.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MemberComponent } from './components/member/member.component';
     OffersComponent,
     ContactComponent,
     ProductsComponent,
-    MemberComponent
+    MemberComponent,
+    ComingSoonComponent
   ],
   imports: [
     BrowserModule,

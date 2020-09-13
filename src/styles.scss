@@ -1,18 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 html, body {
-    margin: 0 auto;
     padding: 0;
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
+    line-height:  1.15 !important;
     font-size: 18px !important;
-    background-image: linear-gradient(#232f3e, #27633f);
-}
-
-body {
     font-family: 'PT Sans', sans-serif !important;
     position: relative;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     color: #585858 !important;
+    background-image: linear-gradient(#232f3e, #27633f);
 }
 
 m-b-10,
@@ -21,7 +19,7 @@ header{
 }
 
 #content{
-    padding-top: 104px;
+    padding-top: 90px;
     color: #969595 !important;
 }
 
@@ -44,4 +42,88 @@ i {
 .p-lr{
     @extend .p-l;
     @extend .p-r;
+}
+
+.mb-0 {
+    margin-bottom: 0!important;
+}
+
+.img-fluid{
+    width: 100%;
+}
+
+.jumbotron{
+    border-radius: 0px !important;
+}
+
+.fa, .fas, .fab {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.social-icons {
+    margin: 0;
+    position: fixed;
+    right: 2.5rem;
+    bottom: 2rem;
+    width: auto;
+    z-index: 2;
+    .fa-whatsapp, 
+    .fa-facebook-f,
+    .fa-instagram {
+        width: auto;
+        height: auto;
+        margin-right: 0px;
+        font-size: inherit;
+    }
+    ul {
+        margin-top: 0;
+        width: auto;
+        li {
+            display: block;
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 1rem;
+            a {
+                transition: all .2s ease-in-out;
+                font-size: 2rem;
+                line-height: 4rem;
+                height: 4rem;
+                width: 4rem;
+                display: block;
+                color: #fff;
+                background-color: rgb(103 179 27);
+                border-radius: 100%;
+                &:hover{
+                    background-color: rgb(255 125 0);
+                    //color: rgb(103 179 27);
+                }
+            }
+        }
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 14px;
+    background: transparent;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(199 199 196); 
+    border-radius: 10px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(228, 228, 227, 0.9);
 }

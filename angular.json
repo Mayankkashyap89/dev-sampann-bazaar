@@ -30,7 +30,7 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/styles/common.scss",
+              "src/assets/styles/theme.scss",
               "./node_modules/bootstrap/scss/bootstrap.scss",
               "./node_modules/font-awesome/css/font-awesome.min.css"
             ],

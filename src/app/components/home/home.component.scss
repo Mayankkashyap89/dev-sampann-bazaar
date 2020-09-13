@@ -5,19 +5,22 @@
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
     position: relative;
-    .top-img{
-        img {
-            position: absolute;
-            width: 100%;
-            opacity: 0.9;
-        }
+    img:first-child {
+        //position: absolute;
+        width: 100%;
+        opacity: 0.9;
     }
 
     .watermark-text{
-        position: relative;
+        top: 18px;
+        width: 100%;
+        position: absolute;
         justify-content: center;
+        margin: 0 auto;
         img {
             width: 30%;
+            //background: #fff;
+            opacity: 1;
             -ms-transform: translate(115%, 100%); /* IE 9 */
             transform: translate(115%, 100%);
         }
