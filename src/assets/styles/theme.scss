@@ -1,4 +1,9 @@
+
 @import "./app/variables.scss";
+@import "./app/base.scss";
+@import "./app/mixin.scss";
+@import '@angular/material/prebuilt-themes/purple-green.css';
+@import '~@angular/material/theming';
 
 
 @media screen and (min-width: 300px) {
@@ -85,7 +90,7 @@
             font-size: 13px !important;
         }
         #navbarNav1 .nav-link {
-            padding: 0.2rem 0px 0.2rem 0px !important;
+            padding: 0.2rem 0px 0.5rem 0px !important;
             margin: 0px 5px !important;
         }
     }
@@ -108,11 +113,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    // .fixed-bottom {
-    //     position: inherit !important;
-    // }
-
-    
+        
 }
 
 
@@ -139,7 +140,7 @@
             justify-content: normal !important;
             margin-left: 0;
             .nav-link{
-                padding: 0.2rem 6px 0.2rem 0px;
+                padding: 0.6rem 0px 0.6rem 0px;
             }
         }
         #navbarNav{

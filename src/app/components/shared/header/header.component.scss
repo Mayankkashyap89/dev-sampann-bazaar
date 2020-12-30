@@ -1,3 +1,5 @@
+@import "./../../../../assets/styles/theme.scss";
+
 .navbar {
     height: 100px;
     background: #232f3e;
@@ -20,14 +22,21 @@
 
     .navbar-nav .nav-item {
         .nav-link{
+            position: relative;
             cursor: pointer;
             margin-left: 20px;
             margin-right: 20px;
             color: rgb(228 228 227 / 90%);
             letter-spacing: 1px;
+            &:hover {
+                color:  $white !important;
+                // @include linear-gradient($saffron, $green);
+            }
         }
         .nav-link.active{
-            border-bottom: 5px solid #636363;
+            ::after {
+                @extend .linear-gradient;
+            }
         }
     }
 

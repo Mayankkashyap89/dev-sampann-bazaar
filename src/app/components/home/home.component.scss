@@ -21,6 +21,7 @@
             width: 30%;
             //background: #fff;
             opacity: 1;
+            filter: drop-shadow(.05em .05em orange);
             -ms-transform: translate(115%, 100%); /* IE 9 */
             transform: translate(115%, 100%);
         }

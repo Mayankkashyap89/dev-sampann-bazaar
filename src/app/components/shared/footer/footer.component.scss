@@ -1,7 +1,9 @@
 .footer{
-    color: #27633f;
+    // color: #27633f;
+  color: white;
+    mix-blend-mode: difference;
     p {
         margin-top: 14px;
-        margin-bottom: 14px;
+        margin-bottom: 8px;
     }
 }
