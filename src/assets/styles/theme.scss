@@ -19,10 +19,6 @@
             flex-wrap: wrap;
         }
     }
-
-    // #content {
-    //     margin-top: 120px;
-    // }
     
     .footer {
         margin-right: 0px !important;
@@ -51,9 +47,9 @@
 }
 
 @media screen and (min-width: 576px) {
-    .navbar-brand{
-        max-width: 50% !important;
-    }
+    // .navbar-brand{
+    //     max-width: 50% !important;
+    // }
 
     .jumbotron {
         padding: 3rem 2rem !important;
@@ -61,7 +57,7 @@
     }
 }
 
-@media (min-width: 650px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 767px) {
     .navbar-brand{
         max-width: 40% !important;
     }    
@@ -85,13 +81,21 @@
     }
 
     .navbar{
-        height: 120px !important;
+        min-height: 110px !important;
         .navbar-nav .nav-item .nav-link{
             font-size: 13px !important;
         }
         #navbarNav1 .nav-link {
             padding: 0.2rem 0px 0.5rem 0px !important;
             margin: 0px 5px !important;
+        }
+        #navbarNav{
+            display: inline-block;
+            .dropdown{
+                position: absolute;
+                right: 0;
+                top: 10px;
+            }
         }
     }
 
@@ -114,6 +118,9 @@
 
 @media screen and (min-width: 768px) {
         
+    .navbar{
+        max-height: 120px !important;
+    }
 }
 
 
@@ -135,26 +142,25 @@
             padding-left: 0px !important;
             font-size: 1rem;
         }
+        #navbarNav{
+            display: inline-block;
+            .dropdown{
+                // position: absolute;
+                // right: 0;
+                // top: 10px;
+                list-style: none;
+                .nav-link{
+                    padding: 1rem !important;
+                    color: rgb(228 228 227 / 90%);
+                }
+            }
+        }
         #navbarNav1{  
             width: 100%;
             justify-content: normal !important;
             margin-left: 0;
             .nav-link{
                 padding: 0.6rem 0px 0.6rem 0px;
-            }
-        }
-        #navbarNav{
-            display: inline-block;
-            .dropdown{
-                position: absolute;
-                right: 0;
-                /* text-decoration: none; */
-                top: 10px;
-                list-style: none;
-                .nav-link{
-                    padding: 1rem !important;
-                    color: rgb(228 228 227 / 90%);
-                }
             }
         }
     }

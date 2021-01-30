@@ -10,7 +10,7 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
     color: #585858 !important;
-    background-image: linear-gradient(#232f3e, #27633f);
+    background: linear-gradient(#232f3e, #27633f) no-repeat center center fixed;
 }
 
 m-b-10,
@@ -89,9 +89,9 @@ i {
             a {
                 transition: all .2s ease-in-out;
                 font-size: 2rem;
-                line-height: 4rem;
-                height: 4rem;
-                width: 4rem;
+                line-height: 3rem;
+                height: 3rem;
+                width: 3rem;
                 display: block;
                 color: #fff;
                 background-color: rgb(103 179 27);
